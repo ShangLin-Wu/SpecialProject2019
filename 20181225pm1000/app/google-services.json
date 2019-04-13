@@ -1,0 +1,102 @@
+{
+  "project_info": {
+    "project_number": "776832657726",
+    "firebase_url": "https://myapp-50d22.firebaseio.com",
+    "project_id": "myapp-50d22",
+    "storage_bucket": "myapp-50d22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776832657726:android:ebcebf2215e61525",
+        "android_client_info": {
+          "package_name": "com.example.samwu.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776832657726-o5om3h1q0hti50j77lvne8m2qa0bmj3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samwu.myapp",
+            "certificate_hash": "b8f9cdae446ad9674db42843cdb6a7c84cb4fafa"
+          }
+        },
+        {
+          "client_id": "776832657726-cg8c3m47tlh754crpnuqf4sr672pqei1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samwu.myapp",
+            "certificate_hash": "1ef84f84a1cda1b0430f510f4b6a277c06b5a572"
+          }
+        },
+        {
+          "client_id": "776832657726-t7gp7jdoerc24q17272jt2l4grspmfhc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samwu.myapp",
+            "certificate_hash": "6a43c8028fa0dfc4d7c41cc4be92b3d6074a5a8d"
+          }
+        },
+        {
+          "client_id": "776832657726-nj7s4icq0ksu59e6o051ebm0ttn077iv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA82ZW8qYK59mw9Q3THoboN7UCS4oQjYoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776832657726-nj7s4icq0ksu59e6o051ebm0ttn077iv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776832657726:android:8b5a68eab02825af",
+        "android_client_info": {
+          "package_name": "samwu.myapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776832657726-nj7s4icq0ksu59e6o051ebm0ttn077iv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA82ZW8qYK59mw9Q3THoboN7UCS4oQjYoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

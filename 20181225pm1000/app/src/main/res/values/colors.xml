@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004d40</color>
+    <color name="colorPrimaryDark">#00251a</color>
+    <color name="colorAccent">#39796b</color>
+    <color name="btnsignup">#39796b</color>
+    <color name="btnSignActive">#a9d440</color>
+    <color name="white">#FFFF</color>
+    <color name="grey">#b3b2b2</color>
+    <color name="signbackground">#254353</color>
+    <color name="signbackground1">#362323</color>
+    <color name="button">#945521</color>
+    <color name="btn">#1274B9</color>
+    <color name="transparent">#00000000</color>
+    <color name="defaultbackground">#F5F5F5</color>
+    <color name="defaultbackground2">#bfbbaf</color>
+    <color name="defaultbackground3">#d0cdc4</color>
+    <color name="defaultbackground4">#EFEBE9</color>
+    <color name="defaultbackground5">#E6EEEC</color>
+    <color name="linecolor">#BDBDBD</color>
+    <color name="mainlinecolor">#9E9E9E</color>
+    <color name="textcolor_hint">#4f4f4f</color>
+    <color name="background_white">#e0d6d1</color>
+    <color name="background">#d0cdc4</color>
+    <color name="blue">#34495e</color>
+    <color name="button_orange">#f75000</color>
+    <color name="navigation_color">#f2e6e6</color>
+    <color name="background_Color1">#d0cdc4</color>
+    <color name="searchresult">#444444</color>
+    <color name="greybtnbackground">#DCDCDC</color>
+    <color name="fontcolor">#3d3e3d</color>
+    <color name="btncolorDarkOrg">#9a5319</color>
+    <color name="btncolorOrg">#f75000</color>
+    <color name="btncolorRed">#AE0000</color>
+    <color name="btncolorGreen">#006030</color>
+    <color name="backgroundBrown">#af9a80</color>
+    <color name="backgroundDarkBrown">#99866f</color>
+    <color name="linecolor1">#2c2c2c</color>
+    <color name="fontcolordark">#252625</color>
+
+
+
+</resources>

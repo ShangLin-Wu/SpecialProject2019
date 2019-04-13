@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundDarkBrown"
+    android:minHeight="22dp">
+
+    <TextView
+        android:id="@+id/CategoryBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:textColor="@color/white"
+        android:text="Category Books"
+        android:textAllCaps="false"
+        android:textSize="32sp"
+        android:fontFamily="@font/comfortaa_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/btnNEW"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/CategoryBooks"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_Color1"
+        android:text="New"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:fontFamily="@font/comfortaa_light"
+        app:layout_constraintBottom_toTopOf="@+id/btnUSED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnUSED"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/btnNEW"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_Color1"
+        android:text="Used"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:fontFamily="@font/comfortaa_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</RelativeLayout>

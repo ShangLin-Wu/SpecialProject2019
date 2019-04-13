@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundDarkBrown"
+    android:minHeight="22dp">
+
+    <TextView
+        android:id="@+id/SelectProductCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:textColor="@color/white"
+        android:text="Select Product Category"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:fontFamily="@font/comfortaa_light"
+        app:layout_constraintBottom_toTopOf="@+id/Clothes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/Clothes"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/SelectProductCategory"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_Color1"
+        android:text="Clothes"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:fontFamily="@font/comfortaa_light"
+        app:layout_constraintBottom_toTopOf="@+id/ElectronicsProducts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ElectronicsProducts"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Clothes"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_Color1"
+        android:text="Electronics Products"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:fontFamily="@font/comfortaa_light"
+        app:layout_constraintBottom_toTopOf="@+id/Books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Books"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/ElectronicsProducts"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_Color1"
+        android:text="Books"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:fontFamily="@font/comfortaa_light"
+        app:layout_constraintBottom_toTopOf="@+id/Furnitures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Furnitures"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Books"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_Color1"
+        android:text="Furnitures"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:fontFamily="@font/comfortaa_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>

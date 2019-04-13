@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_Color1"
+    tools:context=".UploadPage.cloudUploadProducts">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="480dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:background="@color/backgroundDarkBrown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/mainlinecolor"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <View
+            android:id="@+id/separationline"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/mainlinecolor"
+            app:layout_constraintBottom_toTopOf="@+id/SelectProductCategoryBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductTitle" />
+
+        <Button
+            android:id="@+id/SelectProductCategoryBtn"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/square_grey_layout"
+            android:backgroundTint="@color/btncolorRed"
+            android:text="SELECT CATEGORY"
+            android:textAllCaps="false"
+            android:textColor="#e0e0e0"
+            android:textSize="18dp"
+            app:fontFamily="@font/nunito_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <Button
+            android:id="@+id/SelectProductImageBtn"
+            android:layout_width="210dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/square_grey_layout"
+            android:backgroundTint="@color/btncolorGreen"
+            android:text="SELECT IMAGE"
+            android:textAllCaps="false"
+            android:textColor="#e0e0e0"
+            android:textSize="18dp"
+            app:fontFamily="@font/nunito_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.714"
+            app:layout_constraintStart_toEndOf="@+id/SelectProductCategoryBtn"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="UPLOAD ITEM"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="376dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="376dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/square_grey_layout"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textColor="#e0e0e0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa_light"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="460dp"
+            android:layout_height="167dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/square_grey_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="455dp"
+                android:layout_height="165dp"
+                android:layout_alignParentTop="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.929"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.859">
+
+                    <ImageButton
+                        android:id="@+id/uploadimg1"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="false"
+                        android:backgroundTint="#00000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageButton
+                        android:id="@+id/uploadimg2"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="#00000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/uploadimg1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageButton
+                        android:id="@+id/uploadimg3"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="#00000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/uploadimg2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageButton
+                        android:id="@+id/uploadimg4"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="#00000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/uploadimg3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageButton
+                        android:id="@+id/uploadimg5"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="#00000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/uploadimg4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageButton
+                        android:id="@+id/uploadimg6"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="#00000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/uploadimg5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                </android.support.constraint.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/uploadback"
+            android:layout_width="61dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/back"
+            android:onClick="clickback"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/detail"
+            android:layout_width="415dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/product_image"
+            android:background="@drawable/uploadproductscircle_layout"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="left"
+            android:hint="Details:"
+            android:maxLength="390"
+            android:maxWidth="415dp"
+            android:padding="18dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="#0d0d0d"
+            android:textColorHint="@color/textcolor_hint"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SelectProductCategoryBtn" />
+
+
+        <EditText
+            android:id="@+id/ProductTitle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/heading_label"
+            android:layout_alignStart="@+id/heading_label"
+            android:layout_below="@+id/heading_label"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@id/searchbtn"
+            android:layout_toStartOf="@id/searchbtn"
+            android:background="@drawable/uploadproductscircle_layout"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="left|center"
+            android:hint="ProductTitle : "
+            android:inputType="text|textPersonName|textMultiLine"
+            android:maxLength="28"
+            android:maxLines="2"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:scrollbars="vertical"
+            android:textColor="#000"
+            android:textColorHint="@color/textcolor_hint"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <EditText
+            android:id="@+id/productTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/heading_label"
+            android:layout_alignStart="@+id/heading_label"
+            android:layout_below="@+id/heading_label"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/searchbtn"
+            android:layout_toStartOf="@id/searchbtn"
+            android:background="@drawable/uploadproductscircle_layout"
+            android:ems="10"
+            android:gravity="left|center"
+            android:hint="Phone : "
+            android:inputType="phone"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:textColorHint="@color/textcolor_hint"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/comfortaa_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail"
+            app:layout_constraintVertical_bias="0.25" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="253dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2">
+
+    </android.support.v4.view.ViewPager>
+-->
+
+</android.support.constraint.ConstraintLayout>

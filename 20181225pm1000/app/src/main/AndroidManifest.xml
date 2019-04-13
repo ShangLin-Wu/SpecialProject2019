@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.samwu.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_brandlogo20181213"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_brandlogo20181213"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home.home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //Cropper
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        //Cropper
+        <activity android:name=".Favorite.favorite" />
+        <activity android:name=".LoginUI.FbLoginActivity" />
+        <activity android:name=".LoginUI.SignIn" />
+        //Facebook Login
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        //Facebook Login
+        <activity android:name=".Category.categoryClothes" />
+        <activity android:name=".Category.category3C" />
+        <activity android:name=".Category.categoryBooks" />
+        <activity android:name=".Category.categoryFurniture" />
+        <activity android:name=".LoginUI.cloudfirestoreSignUp" />
+        <activity
+            android:name=".Profile.cloudProfile"
+            android:windowSoftInputMode="adjustUnspecified|stateAlwaysHidden" />
+        <activity android:name=".Profile.cloudUpdateProfile" />
+        <activity
+            android:name=".UploadPage.cloudUploadProducts"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".Search.cloudSearch"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ShowProductPage.search.SearchAllProductPage" />
+        <activity android:name=".ShowProductPage.search.SearchViewpager" />
+        <activity android:name=".ShowProductPage.all.AllUploaded" />
+        <activity android:name=".ShowProductPage.all.AllProductPage" />
+        <activity android:name=".ShowProductPage.all.AllViewPager" />
+        <activity android:name=".ShowProductPage.all.AllProduct_detailpage" />
+        <activity android:name=".ShowProductPage.personal.PersonalUploaded" />
+        <activity android:name=".ShowProductPage.personal.PersonalProduct_Page" />
+        <activity android:name=".ShowProductPage.personal.PersonalProduct_ViewPager" />
+        <activity android:name=".ShowProductPage.personal.PersonalProduct_detailpage" />
+        <activity android:name=".Chatroom.chatpage" />
+        <activity android:name=".Chatroom.MessageActivity" />
+        <activity android:name=".Chatroom.ShowChatActivity" />
+        <activity android:name=".Favorite.ProductPagebackfavorite" />
+        <activity android:name=".Favorite.Favorite_detailpage" />
+        <activity android:name=".ShowProductPage.search.SearchProduct_detailpage" />
+        <activity android:name=".Category.FurniturePackage.Furniture_Used.Furniture_Used_Uploaded" />
+        <activity android:name=".Category.FurniturePackage.Furniture_Used.Furniture_Used_Page" />
+        <activity android:name=".Category.FurniturePackage.Furniture_Used.Furniture_Used_ViewPager" />
+        <activity android:name=".Category.FurniturePackage.Furniture_Used.Furniture_Used_detailpage" />
+        <activity android:name=".Category.FurniturePackage.Furniture_New.Furniture_New_Uploaded" />
+        <activity android:name=".Category.FurniturePackage.Furniture_New.Furniture_New_ViewPager" />
+        <activity android:name=".Category.FurniturePackage.Furniture_New.Furniture_New_detailpage" />
+        <activity android:name=".Category.FurniturePackage.Furniture_New.Furniture_New_Page" />
+        <activity android:name=".Category.BooksPackage.BooksNew.NewBooks_Uploaded" />
+        <activity android:name=".Category.BooksPackage.BooksNew.NewBooks_Page" />
+        <activity android:name=".Category.BooksPackage.BooksNew.NewBooks_ViewPager" />
+        <activity android:name=".Category.BooksPackage.BooksNew.NewBooks_detailpage" />
+        <activity android:name=".Category.BooksPackage.BooksUsed.UsedBooks_Uploaded" />
+        <activity android:name=".Category.BooksPackage.BooksUsed.UsedBooks_Page" />
+        <activity android:name=".Category.BooksPackage.BooksUsed.UsedBooks_ViewPager" />
+        <activity android:name=".Category.BooksPackage.BooksUsed.UsedBooks_detailpage" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Pants.Clothes_Pants_Uploaded" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Pants.Clothes_Pants_Page" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Pants.Clothes_Pants_ViewPager" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Pants.Clothes_Pants_detailpage" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shoes.Clothes_Shoes_Uploaded" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shoes.Clothes_Shoes_Page" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shoes.Clothes_Shoes_ViewPager" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shoes.Clothes_Shoes_detailpage" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shirts.Clothes_Shirts_Uploaded" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shirts.Clothes_Shirts_Page" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shirts.Clothes_Shirts_ViewPager" />
+        <activity android:name=".Category.ClothesPackage.Clothes_Shirts.Clothes_Shirts_detailpage" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_3C.Electronics_3C_Uploaded" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_3C.Electronics_3C_Page" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_3C.Electronics_3C_ViewPager" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_3C.Electronics_3C_detailpage" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Cellphone.Electronics_Cellphone_Uploaded" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Cellphone.Electronics_Cellphone_Page" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Cellphone.Electronics_Cellphone_ViewPager" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Cellphone.Electronics_Cellphone_detailpage" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Computer.Electronics_Computer_Uploaded" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Computer.Electronics_Computer_Page" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Computer.Electronics_Computer_ViewPager" />
+        <activity android:name=".Category.ElectronicPackage.Electronics_Computer.Electronics_Computer_detailpage" />
+        <activity android:name=".detailpage"></activity>
+    </application>
+
+</manifest>

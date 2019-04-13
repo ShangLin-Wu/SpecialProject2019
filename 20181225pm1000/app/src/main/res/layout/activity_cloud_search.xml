@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6eeec"
+    tools:context=".Search.cloudSearch">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="480dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/search_field"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/search_field"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="75dp"
+            android:background="#E6EEEC"
+            app:layout_constraintBottom_toTopOf="@+id/Separationline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/search_field"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/redsearchbtn" />
+
+        <TextView
+            android:id="@+id/heading_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Product Search"
+            android:textColor="#555555"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/comfortaa_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/Separationline"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_above="@+id/result_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/linecolor"
+            app:layout_constraintBottom_toTopOf="@+id/result_list"
+            app:layout_constraintStart_toStartOf="@+id/result_list"
+            app:layout_constraintTop_toTopOf="@+id/result_list" />
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/heading_label"
+            android:layout_alignStart="@+id/heading_label"
+            android:layout_below="@+id/heading_label"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/searchbtn"
+            android:layout_toStartOf="@id/searchbtn"
+            android:background="@drawable/search_layout"
+            android:hint="Search Here..."
+            android:inputType="textPersonName"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            app:fontFamily="@font/comfortaa_light"
+            app:layout_constraintBottom_toTopOf="@+id/Separationline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading_label" />
+
+        <include
+            android:id="@+id/include11"
+            layout="@layout/defaultnavigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/result_list"
+            android:layout_width="0dp"
+            android:layout_height="612dp"
+            android:layout_below="@+id/search_field"
+            android:layout_marginTop="160dp"
+            android:background="#E6EEEC"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="160dp"
+            android:background="@color/linecolor"
+            app:layout_constraintBottom_toBottomOf="@+id/Separationline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+
